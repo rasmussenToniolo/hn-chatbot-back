@@ -8,7 +8,6 @@ CORS(app, support_credentials=True)
 app.config['CORS_HEADERS'] = 'Content-Type'
 # api = Api(app)
 
-# TODO: Connect with backend
 
 print(c.chatbot('Hi'))
 
