@@ -6,6 +6,11 @@
       "use": "@vercel/python"
     }
   ],
+  "functions": {
+    "./": {
+      "excludeFiles": "env/*"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
