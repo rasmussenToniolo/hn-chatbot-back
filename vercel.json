@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "./server.py",
-      "use": "@vercel/python"
+
+  "functions": {
+    "api/*.py": {
+      "excludeFiles": "env/*"
     }
-  ],
+  },
+
   "routes": [
     {
       "src": "/(.*)",
